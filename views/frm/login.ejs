@@ -1,0 +1,18 @@
+<h1>Login</h1>
+
+<form action="/v1/api/login" method="post">
+    <div id="frmLoginDiv">
+    <div>
+        <!-- <label for="username">Username:</label> -->
+        <input class="form-control" type="text" id="username" name="Username" placeholder="Username" required>
+    </div>
+    <div>
+        <!-- <label for="password">Password:</label> -->
+        <input class="form-control" type="password" id="password" name="Password" placeholder="Password" required>
+    </div>
+    <div style="width: 235px;">
+        <button class="btn btn-primary form-control" type="submit">Login</button>
+        <button class="btn btn-secondary form-control" type="button" onclick="location.href='/'">Cancel</button>
+    </div>
+    </div>
+</form>

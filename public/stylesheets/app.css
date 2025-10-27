@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+header{
+    /* margin-top: 4px; */
+    margin: 4px 4px 0 4px;
+}
+header > nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > nav > ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+header > nav > ul > li{
+    /* border: 2px solid black; */
+    padding: 4px;
+}
+main{
+
+    /* height: 80vh; */
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+footer > img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+form > #frmLoginDiv{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 50vw;
+    padding: 5px;
+    border-radius: 10px;
+    border: 4px solid green;
+    box-shadow: 5px 5px 5px 5px lightgreen;
+    
+}
