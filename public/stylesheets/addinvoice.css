@@ -1,0 +1,25 @@
+#addInvContainer{
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    
+}
+#addInvContainer > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#addInvContainer > article{
+    background-color: lightgreen;
+}
+#overcorr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

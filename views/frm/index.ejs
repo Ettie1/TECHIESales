@@ -5,16 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>TECHIESales</title>
+    <style>
+        #splashImg{
+            width: 400px;
+            border-radius: 50%;
+            animation: spinSplash 25s infinite linear;
+
+        }
+        @keyframes spinSplash {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        #splashContainer{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+
+            flex-direction: column;
+        }
+        body{
+            background: linear-gradient(to bottom, purple, white, purple)
+        }
+    </style>
 </head>
 <body>
-    <h1>TECHIESales</h1>
-
-    <div id="infoDiv"></div>
+    <div id="splashContainer">
+    <img id="splashImg" src="/images/me.jpg" alt="TECHIESpirals logo" />
+    <marquee>
+        <b>
+        We're a team of Linux enthusiasts and software experts dedicated to building powerful, reliable solutions for modern businesses.
+        Comprehensive Linux-based solutions to power your business growth and digital transformation.
+        Expert management of MySQL, PostgreSQL, MongoDB, and other Linux-based database systems.
+        Founded in 2018, TECHIESpirals began as a small team of Linux system administrators with a passion for open-source technology and a vision to help businesses leverage the power of Linux.
+        </b>
+    </marquee>
+    </div>
     
-    <script>
-        $(()=>{
-            $("#infoDiv").append("<h3>JavaScript is working!</h3>");
-        })
-    </script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+<div id="overcorr">
+<div id="addInvContainer" style="height: 80vh;">
+    <h1>Add Invoice</h1>
+    <section>
+
+        <input id="txtInvoiceBy" class="from-control" <%# placeholder="Quantity Eg. 2" %>  name="InvoiceBy" disabled="true" />
+        <input id="txtInvoiceDate" class="from-control" placeholder="Quantity Eg. 2" name="InvoiceDate" />
+        <input id="txtQuantity" class="from-control" placeholder="Quantity Eg. 2" name="Quantity" />
+        <input id="txtDescription" class="from-control" placeholder="Description" name="Description" />
+        <input id="txtUnitPrice" class="from-control" placeholder="Unit Price Eg. 120" name="UnitPrice" />
+        <button id="btnAddJob" class="btn btn-primary form-control">Add job</button>
+    </section>
+
+    <article id="toAdd">
+        
+    </article>
+
+    <div id="testList">
+        <button id="oTest">Test list</button>
+
+    </div>
+
+</div>
+
+</div>
+<script>
+    $(()=>{
+
+        let invoiceDate = new Date(Date.now()).toLocaleDateString();
+        $("#txtInvoiceDate").val(invoiceDate)
+
+        let testList = $("#testList")
+        const oTest = $("#otest")
+        const toAdd = $("#toAdd")
+        const txtQuantity = $("#txtQuantity")
+        const txtDescription =$("#txtDescription")
+        const txtUnitPrice = $("#txtUnitPrice") 
+        const btnAddJob = $("#btnAddJob");
+        
+        oTest.click(()=>{
+            toSave.forEach(s => testList.append(s))
+        })
+
+        let myVals = [txtDescription, txtQuantity, txtUnitPrice]
+            
+          let myOb 
+          let toSave = []
+
+        btnAddJob.click(()=>{
+          
+
+            toAdd.append((txtQuantity.val()!=""?txtQuantity.val():"0") + " ")
+            toAdd.append((txtDescription.val()!=""?txtDescription.val():"") + " ")
+            toAdd.append("R " + (txtUnitPrice.val()!=""?txtUnitPrice.val():"0")+ ".00" + " ")
+            toAdd.append("<br>")
+
+            myOb = {'Quantity': txtQuantity.val(), 'Description': txtDescription.val(), 'UnitPrice': txtUnitPrice.val()}
+            toSave.push(myOb);
+
+            
+            myVals.map((v)=> v.val(''))
+            $("#testList").concat(JSON.stringify(toSave))
+           alert("To save: " + toSave.length())
+
+        })
+
+    })
+
+</script>

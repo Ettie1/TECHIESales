@@ -1,0 +1,20 @@
+<style>
+    section{
+        height: 75vh;
+    }
+</style>>
+
+<h1>Welcome <%= ValUser %></h1>
+
+<section>
+    <form method="post" action="/menu">
+        <div>
+            <input type="submit" value="addInvoice" name="addinvoice" <%#formaction="/addinvoice"%> class="btn btn-primary form-control" />
+        </div>
+    </form>
+</section>
+
+<!-- <div style="height: 80vh;">
+    <h3>Welcome valUser</h3>
+    <a class="btn btn-primary" href="/addinvoice" data-user=valUser >Add Invoice</a>
+</div> -->

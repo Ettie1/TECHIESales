@@ -1,11 +1,8 @@
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin-left: 0.75in; margin-right: 0.75in; margin-top: 0.5in; margin-bottom: 0.18in }
-		p { color: #000000; orphans: 2; widows: 2; margin-bottom: 0.08in; direction: ltr; background: transparent }
-		p.western { font-family: "Arial", sans-serif; font-size: 10pt; so-language: en-US }
-		p.cjk { font-family: "Times New Roman", serif; font-size: 10pt }
-		p.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+
 	</style>
 <!-- <body lang="en-GB" text="#000000" link="#000080" vlink="#800000" dir="ltr"><p lang="en-US" class="western" style="margin-bottom: 0in"> -->
+<div id="invoice">
 <span style="background: #c0c0c0">TECHIESpirals</span><font size="5" style="font-size: 18pt"><span lang="en-GB"><b>	</b></span></font><font color="#808080"><font face="Arial Black, sans-serif"><font size="6" style="font-size: 28pt"><span lang="en-GB">INVOICE</span></font></font></font></p>
 <p class="western" style="margin-bottom: 0in"><span style="background: #c0c0c0">[Your Company Slogan]</span></p>
 <p class="western" style="margin-bottom: 0in"><br/>
@@ -16,10 +13,10 @@
 	<col width="173"/>
 	<tr valign="top">
 		<td width="467" style="border: none; padding: 0in"><p class="western" style="margin-bottom: 0in">
-			<span style="background: #c0c0c0">[Address]</span></p>
-			<p class="western" style="margin-bottom: 0in"><span style="background: #c0c0c0">[Town, County Postal Code]</span></p>
-			<p lang="en-US" class="western"><span lang="en-GB">Phone <span style="background: #c0c0c0">[01234 567890]</span>
-			Fax <span style="background: #c0c0c0">[01234 567890]</span></span></p>
+			<span style="background: #c0c0c0">7 Prinses Street</span></p>
+			<p class="western" style="margin-bottom: 0in"><span style="background: #c0c0c0">Upington, 8800</span></p>
+			<p lang="en-US" class="western"><span lang="en-GB">Phone <span style="background: #c0c0c0">072 829 0651</span>
+			Fax <span style="background: #c0c0c0">072 829 0651</span></span></p>
 		</td>
 		<td width="173" style="border: none; padding: 0in"><p lang="en-US" class="western" style="text-indent: 0.01in; margin-left: -0.01in; margin-bottom: 0in">
 			<span lang="en-GB"><b>INVOICE No <span style="background: #c0c0c0">[100]</span></b></span></p>
@@ -38,7 +35,8 @@
 <p class="western" style="margin-bottom: 0in"><br/>
 
 </p>
-<table width="734" cellpadding="7" cellspacing="0">
+
+<!-- <table width="734" cellpadding="7" cellspacing="0">
 	<col width="353"/>
 	<col width="353"/>
 	<tr valign="top">
@@ -59,7 +57,8 @@
 			<p class="western"><span style="background: #c0c0c0">[Phone]</span></p>
 		</td>
 	</tr>
-</table>
+</table> -->
+
 <!-- <p class="western" style="margin-bottom: 0in"><br/>
 
 </p>
@@ -76,7 +75,7 @@ or special instructions:</b></span><span lang="en-GB"> </span>
 
 </p> -->
 
-<center>
+<!-- <center>
 	<table width="666" cellpadding="8" cellspacing="0">
 		<col width="99"/>
 		<col width="94"/>
@@ -135,7 +134,7 @@ or special instructions:</b></span><span lang="en-GB"> </span>
 			</td>
 		</tr>
 	</table>
-</center>
+</center> -->
 <p class="western" style="margin-bottom: 0in"><br/>
 
 </p>
@@ -497,3 +496,13 @@ you have any questions concerning this invoice, contact <span style="background:
 <p class="western" align="center" style="margin-bottom: 0in"><b>THANK
 YOU FOR YOUR BUSINESS!</b></p>
 
+</div>	
+<button id="btnPrint">Print invoice</button>
+
+<script>
+	const btnPrint = document.getElementById("btnPrint");
+	btnPrint.onclick = ()=>{
+		print();
+	}
+
+</script>

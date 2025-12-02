@@ -1,0 +1,17 @@
+		#invoice {
+             size: 8.27in 11.69in; 
+             margin-left: 0.75in; 
+             margin-right: 0.75in; 
+             margin-top: 0.5in; 
+             margin-bottom: 0.18in;
+
+             /*My styling*/
+             /* border: 2px solid black; */
+             padding-left: 5px;
+
+            }
+		/* @page { sizephp: 8.27in 11.69in; margin-left: 0.75in; margin-right: 0.75in; margin-top: 0.5in; margin-bottom: 0.18in } */
+		p { color: #000000; orphans: 2; widows: 2; margin-bottom: 0.08in; direction: ltr; background: transparent; }
+		p.western { font-family: "Arial", sans-serif; font-size: 10pt; /*so-language: en-US ;*/}
+		p.cjk { font-family: "Times New Roman", serif; font-size: 10pt ;}
+		p.ctl { font-family: "Times New Roman", serif; font-size: 12pt; /*so-language: ar-SA ;*/}

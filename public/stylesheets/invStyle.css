@@ -1,0 +1,45 @@
+#invoice{
+    /* border: 2px solid black;
+    border-radius: 15px; */
+    size: 8.27in 11.69in; 
+    margin-left: 0.75in; 
+    margin-right: 0.75in; 
+    margin-top: 0.5in; 
+    margin-bottom: 0.18in;
+}
+#secHead{
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+#secHead > div{
+    width: fit-content;
+}
+#secHead > img{
+    border-radius: 50%;
+    opacity: .19;
+    height: 150px;
+    width: 150px;
+}
+#secMain{
+    /*This can be styled if neccessary */
+}
+#secMain > table{
+    margin: 0;
+}
+#secFoot{
+    /* background-color: black; */
+}
+
+@media print{
+    header, footer {display: none;}
+    #invoice {display: block;}
+}
+
+/* @media print{
+    header, footer, nav {display:none; }
+    #invoice *, main * { display:inline-block; }
+} */

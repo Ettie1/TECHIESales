@@ -5,10 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejslayouts = require('express-ejs-layouts');
 
+const sass = require('sass');
+//sass.compile('./public/stylesheets/scss/style.scss', { style: 'compressed', sourceMap: true, outFile: './public/stylesheets/css/style.css' });  
+
 require('./db/dbconn');
 
 var frmRouter = require('./routes/frmRoute');
 var v1apiRouter = require('./routes/v1apiRoute');
+var menuRoute = require('./routes/menuRoute');
 
 var app = express();
 
@@ -24,10 +28,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(ejslayouts);
 app.use('/bs', express.static(path.join(__dirname + '/node_modules/bootstrap/dist/css/')));
+app.use('/bsjs', express.static(path.join(__dirname + '/node_modules/bootstrap/dist/js/')));
 app.use('/js', express.static(path.join(__dirname + '/node_modules/jquery/dist/')));
 
 app.use('/', frmRouter);
 app.use('/v1/api', v1apiRouter);
+app.use('/menu', menuRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
