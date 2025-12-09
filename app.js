@@ -8,7 +8,7 @@ var ejslayouts = require('express-ejs-layouts');
 const sass = require('sass');
 //sass.compile('./public/stylesheets/scss/style.scss', { style: 'compressed', sourceMap: true, outFile: './public/stylesheets/css/style.css' });  
 
-require('./db/dbconn');
+//require('./db/dbconn');
 
 var frmRouter = require('./routes/frmRoute');
 var v1apiRouter = require('./routes/v1apiRoute');
